@@ -1,5 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&family=Roboto:wght@300&display=swap');
 
+/* 
+#9BB8CD; azul
+#3085C3; azul ceu
+#ECE3CE; creme
+
+#E7B10A; amarelo pastel
+
+#1A120B; black coffee
+
+ECEE81
+#E7B10A;
+F8F9D7
+*/
+
+/* Reset */
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
     font-family: 'Poppins', sans-serif;
+   
+}
+
+/* Variables */
+:root {
+    --main-color:#ECE3CE; ;
+    --text-color-black: #000;
+    --text-color-winter: #fff;
+    --text-color-orange: orange;
+    --bio-container-color:#F8F9D7;
+    --about-color: #191919;
+    --about-ctest: #191A19;
+}
+
+
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+#bio-container {
+    flex: 1 1 20%;
+    min-height: 100vh;
+    background-color: #739072;
+   /* background-color: #99B080;*/
+    text-align: center;
+    padding: 30px 12px
+    
+}
+
+#bio-container img {
+    width: 150px;
+    height: 150px;
+
+}
+
+#bio-container .name {
+   /* color: #3A4D39;*/
+   color: #fff;
+}
+.social-icons {
+    padding-top: 30px;
+    
+
+}
+
+#bio-container h5 {
+    text-align: left;
+
+}
+
+.highlighter {
+    color: var(--main-color);
+}
+
+#about-container {
+    flex: 1 1 80%;
+    background-color: #EDDBC7;
+    color: var(--text-color-black);
+    padding: 50px;
+    min-height: 100vh;
+}
+
+#about-container .about-me{
+    color: #3A4D39;
+    
 }
