@@ -71,7 +71,7 @@
 
 #about-container {
   flex: 1 1 80%;
-  background-color: var(--about-color);
+  background-color:var(--about-color);
   color: var(--text-color-coffee);
   padding: 3rem 1.6rem;
   min-height: 100vh;
