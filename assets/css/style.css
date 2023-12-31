@@ -23,7 +23,7 @@
 }
 
 #bio-container {
-  flex: 1 1 15%;
+  flex: 1 1 20%;
   min-height: 100vh;
   background-color: var(--bio-color);
   text-align: center;
@@ -139,4 +139,55 @@ btn-projects span {
 .skills-box i {
   font-size: 2rem;
   margin-right: 0.6rem;
+}
+
+/*breakpoints*/
+@media(max-width:450px){
+  #container{
+    flex-direction: column;
+  }
+
+  #bio-container{
+    min-height: auto;
+  }
+
+  #bio-container h4 {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .social-icons li a {
+    align-items: center;
+    justify-content: center;
+  }
+
+  #about-container {
+    border: none;
+    text-align: center;
+    padding: 30px;
+  }
+
+  #about-container .description {
+    margin: 10px auto;
+    max-width: 100%;
+    line-height: 26px;
+  }
+
+  #btn-projects {
+    margin: 20px auto;
+  }
+  #skills-title {
+    font-size: 2rem;
+    padding-top: 20px;
+  }
+  .skills-box {
+    flex:  1 1 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .skills-box i {
+    font-size: 60px;
+  }
 }
